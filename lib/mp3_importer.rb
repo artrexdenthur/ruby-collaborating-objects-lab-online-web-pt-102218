@@ -7,7 +7,7 @@ class MP3Importer
   end
   
   def files
-    Dir[@path]
+    Dir.entries(@path)
   end
   
   def import
