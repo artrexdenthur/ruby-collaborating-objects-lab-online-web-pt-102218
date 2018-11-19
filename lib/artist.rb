@@ -17,6 +17,11 @@ class Artist
     @@all << self
   end
   
+  def print_songs
+    
+  
+  # Class methods
+  
   def self.all
     @@all
   end
@@ -25,7 +30,6 @@ class Artist
     @@all.find { |artist| artist.name == name }
   end
   
-    
   
   def self.find_or_create_by_name(name)
     find_by_name(name) || self.new(name)
